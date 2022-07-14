@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/* Header css format */
+nav,a, button{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:#CD2653;
+    text-decoration: none;
+}
+
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0%;
+
+}
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+    opacity: 100%;
+}
+
+.navigation{
+    list-style: none;
+}
+
+.navigation{
+    display: inline-block;
+    padding: 0px 25px;
+}
+
+.navigation a{
+    transition: all 0.3s ease 0s
+}
+
+.navigation a:hover{
+    color:#D98F9D;
+}
+
+button{
+    padding: 10px 25px;
+    background-color: rgba(217,143,157,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(217 ,143, 157, 0.8);
+}
+
+ul{
+    list-style: none;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+}
+.nav-link li{
+    margin: 0 20px;
+}
+
+.menu{
+    position: absolute;
+    top: 30px;
+    right: 80px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+/*mobile device*/
+@media only screen and (max-width:850px){
+    
+    .navigation{
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 0;
+    }
+    .menu{
+        display: block;
+    }
+    .logo{
+        top: 30px;
+        left: 30px;
+    }
+    nav .nav-link{
+        top: 0;
+        left: 0;
+    }
+    .nav-link{
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        background-color: #0D0D0D;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .nav-link li{
+        margin: 20px auto;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+    .heading1{
+    right:0;
+    bottom:0;
+    }
+}
+/* Gradient color effect */
+h1{
+    background: linear-gradient(90deg, #BF3B5E, #BF3B5E, #4E1A24, #D92567, #E8BCC4, #BF3B5E);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    background-clip:content-box;
+    -webkit-background-clip: text;
+    animation: animate 20s linear infinite;
+}
+
+
+@keyframes animate{
+    0%{
+        background-position:0% ;
+    }
+    100%{
+        background-position: 400%;
+    }
+    
+}
+
+/*------------------------------------------------------------*/
+
+.container {
+    display: flex;
+  }
+  
+  .section {
+    flex: 1; /*grow*/
+  }
+  
+  @media (max-width: 768px) { /*breakpoint*/
+    .container {
+      flex-direction: column;
+    }
+  }
+/*--------Background video ---------*/
+.background-video{
+    position: absolute;
+    right:0;
+    bottom:0;
+    z-index: -1;
+}
+
+@media (max-width:450px){
+    .background-video{
+        top: 0;
+        height: 50%;
+    }
+    
+}
+
+@media(min-aspect-ratio: 16/9){
+    .background-video{width: 100%;
+    height: auto;}
+}
+
+@media(min-aspect-ratio: 16/9){
+    .background-video{width: auto;
+    height: 100%;}
+}
+
+.texting{
+    position:absolute;
+}
+
+.overlay{
+    position:relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.3 ;
+}
+
+/* styling */
+
+.line{
+    width: 150px;
+    height: 4px;
+    background-color: #CD2653;
+    margin: 10px auto;
+    border-radius: 5px;
+
+}
+
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color:#0D0D0D;
+}
+
+.ctn{
+    padding:8px 15px;
+    background: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+.ctn:hover{
+    background-color: rgba(252,3,107, 0.7);
+}
+
+.ctn {
+    transition: all 0.3s ease 0s
+}
+
+.bottom{
+    padding-top: 3%;
+    padding-bottom: 3%; 
+    background-color: #F2EBDF; 
+    color: black; 
+    font-weight: lighter;
+    text-align: center;
+}
+
+/* testimony pages */
+
+.heading1{
+    text-align: center;
+    font-family: 'Manrope',sans-serif; 
+    font-size:12vmin; 
+    height: 100%; 
+    margin-top: 5%;
+}
+
+.heading1desc{
+    font-family: 'Manrope',sans-serif; 
+    font-size:6vmin; 
+    height: 100%; 
+    margin-bottom: 8em;
+    text-align: center;
+}
+
+/* about us page */
+.founder{
+    font-family:'Poppins', sans-serif ; 
+    margin-top: 1em; 
+    margin-bottom: 0%
+}
+
+.aboutus{
+    font-family: 'Manrope',sans-serif; 
+    font-size:12vmin; 
+    height: 20%; 
+    margin-top: 5%; 
+    color: black;
+    text-align:center;
+}
+
+.visionmission{
+    font-family:'Poppins', sans-serif ; 
+    margin-top: 1em; 
+    margin-bottom: 0%;
+}
+
+.desc{
+    text-align: center;
+}
+
+.team{
+    font-family:'Poppins', sans-serif ; 
+    margin-bottom: 2%;
+}

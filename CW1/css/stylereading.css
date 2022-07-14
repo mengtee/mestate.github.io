@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+nav,a, button{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:#cc5273;
+    text-decoration: none;
+}
+
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0%;
+
+}
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+    opacity: 100%;
+}
+
+.navigation{
+    list-style: none;
+}
+
+.navigation{
+    display: inline-block;
+    padding: 0px 25px;
+}
+
+.navigation a{
+    transition: all 0.3s ease 0s
+}
+
+.navigation a:hover{
+    color:#D98F9D;
+}
+
+button{
+    padding: 10px 25px;
+    background-color: rgba(217,143,157,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(217 ,143, 157, 0.8);
+}
+
+ul{
+    list-style: none;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+}
+.nav-link li{
+    margin: 0 20px;
+}
+
+.menu{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+/*mobile device*/
+@media only screen and (max-width:850px){
+    
+    .navigation{
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 0;
+    }
+    .menu{
+        display: block;
+    }
+    .logo{
+        top: 30px;
+        left: 30px;
+    }
+    nav .nav-link{
+        top: 0;
+        left: 0;
+    }
+    .nav-link{
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        background-color: #0D0D0D;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .nav-link li{
+        margin: 20px auto;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+    .heading1{
+    right:0;
+    bottom:0;
+    }
+}
+
+.heading2{
+    font-family:'Poppins', sans-serif ; 
+    margin-top: 5vmin; 
+    margin-bottom: 0%;
+    text-align: center;
+}
+
+.line{
+    width: 150px;
+    height: 4px;
+    background-color: #CD2653;
+    margin: 10px auto;
+    margin-bottom: 7vmin ;
+    border-radius: 5px;
+
+}
+
+.bottom{
+    padding-top: 1.5%;
+    padding-bottom: 1.5%; 
+    background-color: #595959; 
+    color: white; 
+    font-weight: lighter;
+    text-align: center;
+}
+
+.marginbottom{
+    margin-bottom: 10vmin;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+
+/* Create two equal columns that floats next to each other */
+.col {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row{
+    margin-top: 25px;
+}
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .col {
+      width: 100%;
+    }
+}
+
+body, html{
+    overflow-x: hidden;
+}
+
+.image-gallery img{
+    width: 90%;
+}
+
+
+.ctn{
+    padding:8px 15px;
+    background: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+.ctn:hover{
+    background-color: rgba(252,3,107, 0.7);
+}
+
+.ctn {
+    transition: all 0.3s ease 0s
+}

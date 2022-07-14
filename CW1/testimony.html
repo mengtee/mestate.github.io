@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/stylenav.css">
+    <head><title> MESTATE-Testimonial </title></head>
+    <body style="margin: 0%;">
+        <header>
+                
+            <img style="margin-top:1% ;" class= "logo" src="./picture/goldlogo.svg"  height="100" width="" alt="My company logo">
+            <nav class="navigation">
+                <ul class="nav-link">
+                    <li><a href="property.html"> Home </a> </li>&nbsp; 
+                    <li><a href="aboutus.html"> About us </a> </li> &nbsp; 
+                    <li><a href="testimony.html"> Testimonial </a> </li> &nbsp;
+                    <li><a href="https://wa.me/60179788286?text=PropertyProject">Contact us</a></li> 
+                    &nbsp;
+                    &nbsp; 
+                    <li><a href="login.html" style="color: black;" > <button style="color: black;">Login</button></a></li> &nbsp;<br> 
+                    <img src="./picture/menu.png" alt="menu imange" class="menu">
+                </ul>
+            </nav>
+        </header>
+        <script>
+            const menu = document.querySelector('.menu')
+            const navlink= document. querySelector('.nav-link')
+
+            menu.addEventListener('click',()=>{navlink.classList.toggle('mobile-menu')})
+        </script>
+        <div class="overlay"></div>
+        <div>
+        <video autoplay loop muted plays-inline class="background-video">
+            <source src="./picture/awardedited.mp4" type="video/mp4" loop>
+        </video>
+
+        <br>
+        <h1 class="heading1" >
+            Testimonial</h1>
+        <h1 class="heading1desc">
+            <b>An Award Winning property group</b></h1>
+        <main>
+            <div style="margin-bottom: 3%;" class="container">
+                <div class="section"><center><img src="./picture/sme_logo.png" alt = "Error" height="160pt" width="" ></center></div>
+                
+                <div class="section"><center><img src="./picture/award.png" alt = "Error" height="160pt" width="" ></center></div>
+                
+                <div class="section"><center><img src="./picture/estate.jpg" alt = "Error" height="160pt" width="" ></center></div>
+              </div>
+            
+            <p><center style="padding:8vmin 16vmin 8vmin 16vmin; line-height: 1.5; background-color: #F2EBDF; font-weight: lighter; ">
+                MESTATE Property Group is now honourably recognized by the property industry as one of the 
+                pioneers and with that, we’ve won recognition awards over a short period of time
+            </center></p>
+            <br>
+            <div class="title">
+                <h2 style="font-family:'Poppins', sans-serif ; margin-top: 1em; margin-bottom: 0%;">Join Us Now!</h2>
+                <div class="line"></div>
+            </div>
+            <blockquote><center style="margin-top: 5vmin; margin-bottom: 5vmin">Together we fight!</center>
+                <br>
+                <br>  
+                
+                <center style="margin-bottom: 6%;">
+                <b><a class="ctn" href="https://wa.me/60179788286?text=I_would_like_to_join"> Join Us </a></b>
+            </center>
+        </blockquote>
+            
+        </main>
+        <footer>
+            <div class="bottom">
+                Copyright &copy; 2022 MESTATE <br> <br> All Right Reserved 
+            </div>
+        </footer>
+    </body>
+</html>
